@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
-import authRoutes from "./routes/auth.routes.js"
+import authRoute from "./routes/auth.route.js";
+import userRoute from "./routes/user.route.js"
 import connectMongoDB from "./db/connectMongoDB.js";
 import cookieParser from "cookie-parser";
 
@@ -13,7 +14,8 @@ app.use(express.urlencoded({ extended: true })); //to parse form detail (urlenco
 
 app.use(cookieParser())
 
-app.use("/api/auth", authRoutes)
+app.use("/api/auth", authRoute)
+app.use("/api/users", userRoute)
 
 console.log(process.env.MONGO_URL)
 
