@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
-    fullname: {
+    fullName: {
         type: String,
         required: true
     },
@@ -54,6 +54,6 @@ const userSchema = new mongoose.Schema({
 }, { timestamps: true })
 
 
-const User = mongoose.Model("User", userSchema);
+const User = mongoose.model("User", userSchema);
 
 export default User
