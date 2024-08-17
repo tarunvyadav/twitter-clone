@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const notificationSchema = new mongoose.Schema(
     {
@@ -19,10 +19,10 @@ const notificationSchema = new mongoose.Schema(
         },
         read: {
             type: Boolean,
-            default: false
-        }
+            default: false,
+        },
     },
-    { timestanmps: true }
+    { timestamps: true }
 );
 
 const Notification = mongoose.model("Notification", notificationSchema);
