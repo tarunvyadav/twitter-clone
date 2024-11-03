@@ -1,6 +1,4 @@
-import React from 'react'
-
-function ProfileHeaderSkeleton() {
+const ProfileHeaderSkeleton = () => {
     return (
         <div className='flex flex-col gap-2 w-full my-2 p-4'>
             <div className='flex gap-2 items-center'>
@@ -20,6 +18,5 @@ function ProfileHeaderSkeleton() {
             </div>
         </div>
     );
-}
-
-export default ProfileHeaderSkeleton
+};
+export default ProfileHeaderSkeleton;
